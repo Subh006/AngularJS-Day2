@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>Angular JS</title>
+</head>
+
+<body ng-app="myApp1">
+    <div ng-controller="myController1">
+    <div ng-repeat="emp in employees">
+        <p>{{emp.fname | uppercase}}</p>
+        <p>{{emp.lname | lowercase}}</p> 
+        <p>{{emp.salary | currency}}</p>
+    </div>
+
+    <p ng-show="visible">Hi I am Hidden</p>
+
+    <button ng-click="show()">Click me</button>
+    </div>
+
+    <script src="app1.js"></script>
+</body>
+
+</html>
